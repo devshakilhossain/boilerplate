@@ -1,0 +1,49 @@
+.rs-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  max-width: 320px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.rs-card h1 {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 2.25rem;
+  color: #6c5ce7;
+  margin-bottom: 1rem;
+}
+.rs-card .rs-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.rs-card button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 250ms ease;
+  background-color: #6c5ce7;
+  color: #fff;
+}
+.rs-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.rs-card button:hover {
+  background-color: #00cec9;
+}
+.rs-card button:active {
+  transform: scale(0.96);
+}/*# sourceMappingURL=card.css.map */

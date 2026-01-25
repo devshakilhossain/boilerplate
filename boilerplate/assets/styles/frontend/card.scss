@@ -1,0 +1,35 @@
+@use "functions" as *;
+@use "mixins" as *;
+
+.rs-card {
+  @include surface(md);
+  padding: spacing(lg);
+  max-width: 320px;
+  margin: spacing(lg) auto;
+  text-align: center;
+
+  h1 {
+    @include heading(1);
+    color: color(primary);
+    margin-bottom: spacing(md);
+  }
+
+  .rs-actions {
+    @include flex-center;
+    gap: spacing(sm);
+  }
+
+  button {
+    @include button-base;
+    background-color: color(primary);
+    color: #fff;
+
+    &:hover {
+      background-color: color(secondary);
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
