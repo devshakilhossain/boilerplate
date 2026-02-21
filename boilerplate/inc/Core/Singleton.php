@@ -6,7 +6,7 @@ trait Singleton
 {
     private static $instance = null;
 
-    final public static function instance()
+    public static function instance()
     {
         if (static::$instance === null) {
             static::$instance = new static();
@@ -15,8 +15,12 @@ trait Singleton
         return static::$instance;
     }
 
-    final private function __clone() {}
-    final public function __wakeup() {}
-
     protected function __construct() {}
+
+    private function __clone() {}
+
+    public function __wakeup()
+    {
+        throw new \Exception("Cannot unserialize singleton");
+    }
 }
