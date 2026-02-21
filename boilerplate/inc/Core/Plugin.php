@@ -4,7 +4,7 @@ namespace RS\Core;
 
 use RS\Admin\Admin;
 use RS\Frontend\Frontend;
-use RS\API\Api;
+use RS\API\API;
 
 class Plugin
 {
@@ -22,6 +22,7 @@ class Plugin
         }
 
         Frontend::instance();
-        Api::instance();
+        API::instance();
     }
 }
+
