@@ -5,7 +5,7 @@ namespace RS\API;
 use RS\Core\Rest;
 use WP_REST_Server;
 
-class Api extends Rest
+class API extends Rest
 {
     protected function routes()
     {
@@ -52,3 +52,4 @@ class Api extends Rest
         ];
     }
 }
+
